@@ -18,7 +18,6 @@ Item {
     Behavior on opacity { NumberAnimation { duration: 300 }}
 
     function updateOpacity() {
-        //hover is not usable in mobile platforms
         if (Qt.platform.os == "android" || Qt.platform.os == "ios")
             return;
 
